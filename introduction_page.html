@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+     function show_layer(div_name){
+    document.all.div_01.style.display="none";
+    document.all.div_02.style.display="none";
+    document.all.div_03.style.display="none";
+    document.all.div_04.style.display="none"; // 메뉴 숫자에 따라 늘려주세요
+         switch(div_name)
+         {
+             case '1':
+                 document.all.div_01.style.display="";
+                 break;
+             case '2':
+                 document.all.div_02.style.display="";
+                 break;
+             case '3':
+                 document.all.div_03.style.display="";
+                 break;
+             case '4':
+                 document.all.div_04.style.display="";
+                 break;
+         }
+     }
+    </script>
+
+    <title> 위코드 | 자기소개하기 </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+        .hello1{
+            color: white;
+            text-align: center;
+        }
+         .hello2{
+            color: aquamarine;
+            text-align: center;
+             font-size: larger;
+        }
+        
+        .wrap {
+            width: 100%;
+            background-image: url(../image/Disney.jpg);
+            background-position: top;
+        }
+
+        .img-responsive
+        {
+            margin : auto;
+            width : 500px;
+            border-radius: 15px;
+        }
+
+        .card-title {
+            font-size: x-large;
+            margin-bottom: 30px;
+            background-color: yellow;
+        }
+
+        .card-comment {
+            color: blue;
+            font-weight: bold;
+        }
+        
+    </style>
+
+</head>
+<body>
+<div class="wrap">
+    <div>
+        <h1 class = "hello1"> <br> <br> Hello wecode 31st World!</h1>
+        <p class = "hello2"> Dami's Introduction Page </p>
+        <hr>
+    <DIV id=div_01>
+    <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top: 30px;" >
+        <tr>
+            <td><a class="btn btn-primary btn-lg" role="button" href="#" > # 현재는 Marketer </a></td>
+            <td><a class="btn btn-info btn-lg" href="javascript:show_layer('2');" role="button"> #ENFP </a></td>
+            <td><a class="btn btn-warning btn-lg" href="javascript:show_layer('3');" role="button"> #하고싶은 건 Backend </a></td>
+            <td><a class="btn btn-danger btn-lg" href="javascript:show_layer('4');" role="button"> #각오 한마디 </a></td>
+        </tr>
+        <tr><td  colspan=4 align=center style='padding-top:50px;'>
+            <div class="card" id="intro-card">
+            <img class="img-responsive center-block" src="https://2.gall-img.com/hygall/files/attach/images/82/498/702/241/17323429d5233d0dda20474b72cd17df.png"
+                 alt="Card image cap">
+            <div class="card-body">
+                <a class="card-title"> [8년차 마케터] </a>
+                <p class="card-text">
+                    <br> 안녕하세요!<br>
+                    저는 커머스플랫폼에서 7년간 일을 하다가, <br>반년 전부터 스타트업으로 이직하여 <br> 서비스기획자 업무를 겸하고 있는 마케터입니다 :)  </p>
+                <p class="card-comment">데이터 전문가가 되고 싶어서 위코드에 왔습니다.</p>
+            </div>
+            </td>
+        </tr>
+    </table>
+    </DIV>
+    <DIV id=div_02 style="DISPLAY: none">
+        <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top: 30px;" >
+        <tr>
+            <td><a class="btn btn-primary btn-lg" role="button" href="javascript:show_layer('1');"> # 현재는 Marketer </a></td>
+            <td><a class="btn btn-info btn-lg" role="button" href="#" > #ENFP </a></td>
+            <td><a class="btn btn-warning btn-lg" href="javascript:show_layer('3');" role="button"> #하고싶은 건 Backend </a></td>
+            <td><a class="btn btn-danger btn-lg" href="javascript:show_layer('4');" role="button"> #각오 한마디 </a></td>
+        </tr>
+        <tr><td  colspan=4 align=center style='padding-top:50px;'>
+            <div class="card">
+            <img class="img-responsive center-block" src="https://t4.daumcdn.net/thumb/R720x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/guest/image/nckcGpMvlb4Alq5Y95NHm3CkeIs.JPG"
+            <div class="card-body">
+                <a class="card-title"> [재기발랄한 활동가] </a>
+                <p class="card-text">
+                    <br> 저의 MBTI는 ENFP 입니다. <br>
+                    외향적인 성격이고 쉼 없이 하루종일 말을 해도 텐션이 안 떨어지는 특징이 있습니다.<br>
+                    그래서 친구들은 저랑 놀면 너무 피곤하다고 합니다. <br> <br> 여러분들도 저와 친해지면 많이 피곤하실 수 있습니다 ㅎㅎㅎ  </p>
+                <p class="card-comment"> 헌팅 어벤져스 "안녕하세요" 담당입니다.</p>
+            </div>
+        </td></tr>
+    </table>
+    </DIV>
+  <DIV id=div_03 style="DISPLAY: none">
+        <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top: 30px;" >
+        <tr>
+            <td><a class="btn btn-primary btn-lg" role="button" href="javascript:show_layer('1');"> # 현재는 Marketer </a></td>
+            <td><a class="btn btn-info btn-lg" role="button" href="javascript:show_layer('2');">#ENFP </a></td>
+            <td><a class="btn btn-warning btn-lg"> #하고싶은 건 Backend </a></td>
+            <td><a class="btn btn-danger btn-lg" role="button" href="javascript:show_layer('4');"> #각오 한마디 </a></td>
+        </tr>
+        <tr><td  colspan=4 align=center style='padding-top:50px;'>
+             <div class="card">
+            <img class="img-responsive center-block" src="https://www.meme-arsenal.com/memes/4d91f03ce959543397591ee914a61ac5.jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <a class="card-title"> [백엔드 희망]  </a>
+                <p class="card-text">
+                    회사에서 진행하는 프로젝트가 DB와 관련이 많아서 <br> 백엔드 개발자를 희망하고 있습니다.
+                    <br> <br> 워낙 정신없는 성격이라 잘 할 수 있을지 걱정이 태산입니다. <br> 그래도 화이팅
+                </p>
+                <p class="card-comment"> 위코드 BF 테스트는 3번 다 프론트엔드 </p>
+            </div>
+        </td></tr>
+    </table>
+    </DIV>
+    <DIV id=div_04 style="DISPLAY: none">
+        <table width="707px" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top: 30px;" >
+        <tr>
+            <td><a href="javascript:show_layer('1');" class="btn btn-primary btn-lg"> # 현재는 Marketer </></td>
+            <td><a href="javascript:show_layer('2');" class="btn btn-info btn-lg"> #ENFP </a></td>
+            <td><a href="javascript:show_layer('3');" class="btn btn-warning btn-lg"> #하고싶은 건 Backend </a></td>
+            <td><a class="btn btn-danger btn-lg" href="#" role="button"> #각오 한마디 </a></td>
+        </tr>
+        <tr><td  colspan=4 align=center style='padding-top:50px;'>
+             <div class="card">
+            <img class="img-responsive center-block" src="https://t1.daumcdn.net/cfile/tistory/2112F14458B394652D"
+                 alt="Card image cap">
+            <div class="card-body">
+                <a class="card-title"> [각오 한마디]  </a>
+                <p class="card-text">
+                    <br> 시작은 미약하지만 끝은 창대하리라!
+                    <br> 비전공자에 아는 것이 없어서 백지상태이지만
+                    <br> 두 달간 열심히 달려서 알차게 채워보겠습니다.
+                </p>
+                <p class="card-comment"> 목표 : 빌런 되지 않기 </p>
+            </div>
+        </td></tr>
+    </table>
+    </DIV>
+
+    </div>
+</div>
+
+</body>
+
+</html>
